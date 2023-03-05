@@ -13,7 +13,7 @@ public class PointsGenerator {
     public static String FILE_NAME = "/points.json";
     public static String PATH = "src/main/resources";
 
-    public static void main(String[] args){
+    public static void generate(){
 
         List<Point> points = generateRandomPoints(100000);
         ObjectMapper mapper = new ObjectMapper();

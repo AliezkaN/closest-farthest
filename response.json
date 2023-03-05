@@ -1,0 +1,59 @@
+[ {
+  "response" : {
+    "closest" : {
+      "distance" : 1.4142135623730951,
+      "first" : {
+        "x" : 1.0,
+        "y" : 2.0
+      },
+      "second" : {
+        "x" : 2.0,
+        "y" : 1.0
+      }
+    },
+    "farthest" : {
+      "distance" : 110.0,
+      "first" : {
+        "x" : 1.0,
+        "y" : 2.0
+      },
+      "second" : {
+        "x" : 111.0,
+        "y" : 2.0
+      }
+    }
+  },
+  "dateTime" : "2023-03-05T20:06:20.637",
+  "executionType" : "SINGLE_THREAD",
+  "dataSource" : "MEMORY",
+  "elapsedTime" : "3 milliseconds"
+}, {
+  "response" : {
+    "closest" : {
+      "distance" : 2.3931278575097545E-4,
+      "first" : {
+        "x" : 95.13172958851389,
+        "y" : 22.12459599014166
+      },
+      "second" : {
+        "x" : 95.13173536756919,
+        "y" : 22.12483523313935
+      }
+    },
+    "farthest" : {
+      "distance" : 141.15293032501268,
+      "first" : {
+        "x" : 8.334285257483032E-4,
+        "y" : 0.3085820981120202
+      },
+      "second" : {
+        "x" : 99.9390388992413,
+        "y" : 99.99060067032454
+      }
+    }
+  },
+  "dateTime" : "2023-03-05T18:10:02.158",
+  "executionType" : "MULTI_THREAD",
+  "dataSource" : "JSON",
+  "elapsedTime" : "25139 milliseconds"
+} ]

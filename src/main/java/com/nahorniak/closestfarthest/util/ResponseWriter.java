@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class ResponseWriter {
-    public static void write(Response response, int dataSourceType, int executionType, long elapsedTime) {
+    public static void write(Response response, int dataSourceType, int executionType, long elapsedTime, int pointsAmount) {
 
         if (Objects.isNull(response)) throw new RuntimeException("Something went wrong during processing");
         ObjectMapper mapper = new ObjectMapper();
@@ -42,6 +42,7 @@ public class ResponseWriter {
                     .setExecutionType(executionType == 1 ? ExecutionType.SINGLE_THREAD : ExecutionType.MULTI_THREAD)
                     .setDataSourceType(dataSourceType == 1 ? DataSourceType.JSON : DataSourceType.MEMORY)
                     .setElapsedTime(elapsedTime + " milliseconds")
+                    .setPointsAmount(pointsAmount)
             );
 
             ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter().with(dateFormat);
@@ -65,6 +66,7 @@ public class ResponseWriter {
         private DataSourceType dataSourceType;
         @JsonProperty("elapsedTime")
         private String elapsedTime;
+        private Integer pointsAmount;
     }
 
     private enum ExecutionType {

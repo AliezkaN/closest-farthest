@@ -56,7 +56,7 @@ public class PointApplication {
             Printer printer = new Printer();
             long elapsedTime = printer.printElapsedTime(startTime);
             new Printer().printResults(response,pool, points.size());
-            ResponseWriter.write(response,dataSourceType, executionType, elapsedTime);
+            ResponseWriter.write(response,dataSourceType, executionType, elapsedTime, points.size());
         }
     }
 }

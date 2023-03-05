@@ -16,5 +16,5 @@ https://github.com/AliezkaN/closest-farthest.git
 
 ```ssh
 mvn clean package
-java -jar target/clothest-farthest-1.0-SNAPSHOT.jar
+java -jar target/closest-farthest-1.0-SNAPSHOT.jar
 ```

@@ -1,4 +1,34 @@
-[ {
+[{
+  "pointsAmount" : 100000,
+  "response" : {
+    "closest" : {
+      "distance" : 2.3931278575097545E-4,
+      "first" : {
+        "x" : 95.13173536756919,
+        "y" : 22.12483523313935
+      },
+      "second" : {
+        "x" : 95.13172958851389,
+        "y" : 22.12459599014166
+      }
+    },
+    "farthest" : {
+      "distance" : 141.15293032501268,
+      "first" : {
+        "x" : 99.9390388992413,
+        "y" : 99.99060067032454
+      },
+      "second" : {
+        "x" : 8.334285257483032E-4,
+        "y" : 0.3085820981120202
+      }
+    }
+  },
+  "dateTime" : "2023-03-06T20:25:36.969",
+  "executionType" : "SINGLE_THREAD",
+  "dataSource" : "JSON",
+  "elapsedTime" : "78583 milliseconds"
+}, {
   "pointsAmount" : 11,
   "response" : {
     "closest" : {
@@ -24,10 +54,10 @@
       }
     }
   },
-  "dateTime" : "2023-03-05T22:24:26.388",
-  "executionType" : "SINGLE_THREAD",
+  "dateTime" : "2023-03-06T18:30:13.816",
+  "executionType" : "MULTI_THREAD",
   "dataSource" : "MEMORY",
-  "elapsedTime" : "3 milliseconds"
+  "elapsedTime" : "4 milliseconds"
 }, {
   "pointsAmount" : 100000,
   "response" : {
@@ -54,38 +84,8 @@
       }
     }
   },
-  "dateTime" : "2023-03-05T20:27:23.706",
-  "executionType" : "SINGLE_THREAD",
-  "dataSource" : "JSON",
-  "elapsedTime" : "158000 milliseconds"
-}, {
-  "pointsAmount" : 100000,
-  "response" : {
-    "closest" : {
-      "distance" : 2.3931278575097545E-4,
-      "first" : {
-        "x" : 95.13172958851389,
-        "y" : 22.12459599014166
-      },
-      "second" : {
-        "x" : 95.13173536756919,
-        "y" : 22.12483523313935
-      }
-    },
-    "farthest" : {
-      "distance" : 141.15293032501268,
-      "first" : {
-        "x" : 8.334285257483032E-4,
-        "y" : 0.3085820981120202
-      },
-      "second" : {
-        "x" : 99.9390388992413,
-        "y" : 99.99060067032454
-      }
-    }
-  },
-  "dateTime" : "2023-03-05T18:28:04.568",
+  "dateTime" : "2023-03-06T16:30:35.018",
   "executionType" : "MULTI_THREAD",
   "dataSource" : "JSON",
-  "elapsedTime" : "23813 milliseconds"
+  "elapsedTime" : "12897 milliseconds"
 } ]

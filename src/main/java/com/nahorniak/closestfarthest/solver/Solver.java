@@ -9,14 +9,13 @@ import java.util.List;
 public class Solver {
 
     public static Response solve(int lowIndex, int highIndex, List<Point> points) {
-        System.out.println(Thread.currentThread().getName());
         double minDistance = Double.MAX_VALUE;
         double maxDistance = Double.MIN_VALUE;
         Point minPoint1 = null, minPoint2 = null, maxPoint1 = null, maxPoint2 = null;
         for (int i = lowIndex; i < highIndex; i++) {
             Point first = points.get(i);
-            for (Point second : points){
-
+            for (int j = i + 1; j < points.size(); j++){
+                Point second = points.get(j);
                 if (first.equals(second)) continue;
 
                 double distance = distance(first,second);
@@ -30,7 +29,6 @@ public class Solver {
                     maxPoint1 = first;
                     maxPoint2 = second;
                 }
-
             }
         }
         return new Response()
